@@ -14,12 +14,7 @@ Este projeto nao e uma aplicacao Node.js. Nao usa Puppeteer, Playwright, extenso
 ├── docs/
 │   ├── configuration.md
 │   ├── safari-console.md
-│   ├── security.md
 │   └── troubleshooting.md
-├── examples/
-│   ├── custom-delays.js
-│   └── limited-run.js
-├── CHANGELOG.md
 ├── LICENSE
 └── README.md
 ```
@@ -103,7 +98,7 @@ window.GMAIL_ARCHIVE_CONSOLE_CONFIG = {
 };
 ```
 
-Todos os delays sao em milissegundos. Veja `examples/custom-delays.js` e `docs/configuration.md`.
+Todos os delays sao em milissegundos. Veja tambem `docs/configuration.md`.
 
 ## Limitar execucao
 
@@ -115,7 +110,7 @@ window.GMAIL_ARCHIVE_CONSOLE_CONFIG = {
 };
 ```
 
-Depois cole o script principal. Veja `examples/limited-run.js`.
+Depois cole o script principal.
 
 ## Logs
 
@@ -147,8 +142,8 @@ Antes de usar:
 - Comece com `maxIterations`.
 - Leia o codigo antes de colar.
 - Nao execute scripts desconhecidos no console.
-
-Veja `docs/security.md`.
+- Nao adicione codigo que envie dados para servidores externos.
+- Pare com `GmailArchiveConsole.stop()` antes de trocar de conta, marcador ou busca.
 
 ## Compatibilidade
 
